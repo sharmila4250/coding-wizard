@@ -13,9 +13,14 @@ public class additinalprogr2 {
 		String f=sc.nextLine();
 		System.out.println("enter the direction where man moves fourth");
 		String g=sc.nextLine();
-		if(d.equals(e)||d.equals(f)||d.equals(g)) {
+		if(d.equals(e)&&d.equals(f)&&d.equals(g)){
+			System.out.println("user position is 0");
+		}
+		else if(d.equals(e)||d.equals(f)||d.equals(g)) {
 			System.out.println("user position is 4");
 		}
+		
+		 
 		else {
 			System.out.println("travelling wasted");
 		}
