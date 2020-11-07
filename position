@@ -1,36 +1,24 @@
 import java.util.Scanner;
 
-public class additinalprog2 {
+public class additinalprogr2 {
 
 	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);int count=4;
-System.out.println("enter the direction where man moves first");
-String d=sc.nextLine();
-System.out.println("enter the direction where man moves second");
-String e=sc.nextLine();
-System.out.println("enter the direction where man moves third");
-String f=sc.nextLine();
-System.out.println("enter the direction where man moves fourth");
-String g=sc.nextLine();
-String  p[]= {d,e,f,g};
-for(int i=0;i<p.length;i++) {
-	for(int j=i+1;j<p.length;j++) {
-		if(p[i].equals(p[j])){
-			count=count-2;
-		}}}
-	if(count==4) {
-	System.out.println("travelling wasted");}
-	else if(count<0) {
-		System.out.println("user position is 0");
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);int count=0;
+		System.out.println("enter the direction where man moves first");
+		String d=sc.nextLine();
+		System.out.println("enter the direction where man moves second");
+		String e=sc.nextLine();
+		System.out.println("enter the direction where man moves third");
+		String f=sc.nextLine();
+		System.out.println("enter the direction where man moves fourth");
+		String g=sc.nextLine();
+		if(d.equals(e)||d.equals(f)||d.equals(g)) {
+			System.out.println("user position is 4");
+		}
+		else {
+			System.out.println("travelling wasted");
+		}
 	}
-	else {
-		System.out.println("users position is "+count);
-	}}}
-		
-		
-				
-			
-		
 
-
-	
+}
